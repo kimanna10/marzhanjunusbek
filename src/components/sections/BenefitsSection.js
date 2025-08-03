@@ -18,7 +18,7 @@ const benefits = [
 
 export default function BenefitsSection() {
   return (
-    <Section className="bg-transparent" id="benefits">
+    <Section className="bg-primary/50" id="benefits">
       <SectionHeader
         title="Раскрытие через опыт"
         description={
@@ -26,18 +26,19 @@ export default function BenefitsSection() {
             На{" "}
             <Highlight className="text-primary">
               терапевтическом курсе
-            </Highlight>
+            </Highlight>{" "}
             курсе Вы:
           </>
         }
         className="text-background"
       />
 
+      {/* <LottieAnimation /> */}
       <div className="space-y-4">
         {benefits.map((benefit, index) => (
           <div
             key={index}
-            className="p-6 bg-primary/5 rounded-xl border border-background/10 text-background backdrop-blur-sm flex md:flex-row flex-col gap-1 cursor-pointer"
+            className="flex flex-col gap-1 p-6 border cursor-pointer bg-primary/5 rounded-xl border-background/10 text-background backdrop-blur-sm md:flex-row"
           >
             <div className="text-2xl md:text-3xl">
               <FaCheckCircle className="text-accent" />

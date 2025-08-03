@@ -4,7 +4,7 @@ import SectionHeader from "@/components/layouts/SectionHeader";
 
 export default function ReviewSection() {
   return (
-    <Section className="" id="reviews">
+    <Section className="bg-white" id="reviews">
       <SectionHeader
         title="Что говорят участники"
         description={

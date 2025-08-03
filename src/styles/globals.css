@@ -2,15 +2,24 @@
 
 @theme {
   /* --color-primary: oklch(0.2643 0.1778 264.14); #000479 blue */
-  --color-primary: oklch(0.1645 0.114 264.05); /* #00003e blue */
-  --color-secondary: oklch(0.9503 0.0275 236.17); /* #def2ff light blue */
-  --color-background: oklch(0.9842 0.0034 247.86); /* #f8fafc creamy */
-  --color-accent: oklch(0.8342 0.117 87.43); /*  #e9c46a gold */
+  /* --color-primary: oklch(0.1645 0.114 264.05); /* #00003e blue */
+  /*--color-secondary: oklch(0.9503 0.0275 236.17); /* #def2ff light blue */
+  /*--color-background: oklch(0.9842 0.0034 247.86); /* #f8fafc creamy */
+  /* --color-accent: oklch(0.8342 0.117 87.43); /*  #e9c46a gold */
+
+  --color-primary: oklch(0.3747 0.0834 143.69); /* #224C22 green */
+  --color-secondary: oklch(0.9109 0.0781 144.9); /* #C2F0C2 light blue */
+  --color-background: oklch(0.973 0.0354 145.3); /* #E8FDE8 mint */
+  --color-accent: oklch(0.8482 0.2619 141.35); /* #4CF432 green accent */
+
+  --color-yellow: oklch(0.93 0.2 101.99);
 
   --font-victor-mono: "Victor Mono";
   --font-caveat: "Caveat";
   --font-nunito: "Nunito";
   --font-finlandica: "Finlandica";
+
+  --font-roboto: "Roboto Flex";
 }
 
 html {
@@ -24,7 +33,8 @@ body {
 
   /* font-family: var(--font-nunito-sans); */
 }
-@keyframes animatedGradient {
+
+@keyframes gradientMove {
   0% {
     background-position: 0% 50%;
   }
@@ -36,19 +46,7 @@ body {
   }
 }
 
-.bg-animated-gradient {
-  background: linear-gradient(
-    -45deg,
-    oklch(0.2643 0.1778 264.14),
-    oklch(0.7 0.05 255),
-    oklch(0.9503 0.0275 236.17),
-    oklch(0.7 0.05 255),
-    oklch(0.2643 0.1778 264.14)
-  );
+.animate-gradient {
+  animation: gradientMove 5s ease infinite;
   background-size: 400% 400%;
-  animation: animatedGradient 20s ease infinite;
-}
-
-.bg-vercel {
-  background: radial-gradient(circle at 30% 20%, #000479, #111);
 }

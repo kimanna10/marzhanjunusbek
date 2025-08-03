@@ -4,7 +4,7 @@ import Button from "@/components/ui/Button";
 
 export default function HeroSection() {
   return (
-    <section className="relative flex items-center bg-transparent text-background h-lvh">
+    <section className="relative flex items-center bg-primary/20 backdrop-blur-xs text-white h-lvh">
       <Container>
         <div className="flex flex-col items-start justify-center max-w-2xl gap-5 sm:gap-10">
           <h1 className="text-2xl font-bold sm:text-4xl">

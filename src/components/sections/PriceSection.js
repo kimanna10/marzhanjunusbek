@@ -4,7 +4,7 @@ import SectionHeader from "@/components/layouts/SectionHeader";
 
 export default function PriceSection() {
   return (
-    <Section className="" id="pricing">
+    <Section className="bg-white" id="pricing">
       <SectionHeader
         title="Тарифы"
         description={

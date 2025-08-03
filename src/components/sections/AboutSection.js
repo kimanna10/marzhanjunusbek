@@ -4,7 +4,7 @@ import SectionHeader from "@/components/layouts/SectionHeader";
 
 export default function AboutSection() {
   return (
-    <Section className="" id="about">
+    <Section className="bg-white" id="about">
       <SectionHeader
         title="О методе Sense Out Pro (SOP)"
         description={

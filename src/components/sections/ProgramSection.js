@@ -7,7 +7,7 @@ import { MdLiveTv } from "react-icons/md";
 
 export default function ProgramSection() {
   return (
-    <Section className="" id="program">
+    <Section className="bg-white" id="program">
       <SectionHeader
         title="Как проходит обучение"
         description={

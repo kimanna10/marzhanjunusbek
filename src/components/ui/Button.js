@@ -17,10 +17,11 @@ export default function Button({
   const isIconOnly = !children && icon;
 
   let variantClass = "";
-  if (variant === "primary") variantClass = "bg-accent text-primary  ";
+  if (variant === "primary")
+    variantClass = "bg-yellow text-primary  rounded-xl";
   if (variant === "secondary")
     variantClass =
-      "bg-transparent text-background outline-2 outline-background outline-offset-[-2px] hover:text-primary hover:bg-background ";
+      "bg-transparent text-background outline-2 outline-background outline-offset-[-2px] hover:text-primary hover:bg-background rounded-xl";
 
   if (variant === "outlined")
     variantClass =
@@ -28,7 +29,7 @@ export default function Button({
 
   if (variant === "icon")
     variantClass =
-      "bg-primary rounded-full text-background hover:text-accent text-lg";
+      "bg-primary rounded-full text-background hover:text-yellow text-lg";
 
   let sizeClass = "";
 

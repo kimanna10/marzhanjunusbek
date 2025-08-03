@@ -8,7 +8,7 @@ import { RiInstagramFill, RiWhatsappFill } from "react-icons/ri";
 
 export default function ContactSection() {
   return (
-    <Section className="" id="contact">
+    <Section className="bg-white" id="contact">
       <SectionHeader
         title="Контакты"
         description={

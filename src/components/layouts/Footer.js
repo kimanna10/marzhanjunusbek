@@ -10,7 +10,7 @@ export default function Footer() {
     { label: "Контакты", href: "#contact" },
   ];
   return (
-    <footer className="py-14 bg-primary/50 text-background md:text-center">
+    <footer className="py-14 bg-primary/40 text-background md:text-center">
       <Container className="space-y-4">
         {/* Логотип или название */}
         <div className="text-xl font-bold ">

@@ -14,7 +14,7 @@ const points = [
 
 export default function AuthorSection() {
   return (
-    <Section className="" id="author">
+    <Section className="bg-white" id="author">
       <SectionHeader
         title="Автор и ведущая курса - Маржан Жунусбек"
         description={
@@ -26,8 +26,8 @@ export default function AuthorSection() {
         }
       />
 
-      <div className="flex flex-col-reverse  md:flex-row gap-8  items-center md:max-w-5xl mx-auto">
-        <div className="space-y-4 md:w-2/3 w-full">
+      <div className="flex flex-col-reverse items-center gap-8 mx-auto md:flex-row md:max-w-5xl">
+        <div className="w-full space-y-4 md:w-2/3">
           {points.map((point, index) => (
             <div key={index} className="flex items-start gap-3 ">
               <FaCheck className="mt-1 text-accent shrink-0" />
@@ -36,7 +36,7 @@ export default function AuthorSection() {
           ))}
         </div>
 
-        <div className="flex-shrink-0 overflow-hidden rounded-xl shadow-lg md:w-1/3 w-full">
+        <div className="flex-shrink-0 w-full overflow-hidden shadow-lg rounded-xl md:w-1/3">
           <img
             src="/author.jpg"
             alt="Автор курса"
