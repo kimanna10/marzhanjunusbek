@@ -1,26 +1,54 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* --color-primary: oklch(0.2643 0.1778 264.14); #000479 blue */
+  --color-primary: oklch(0.1645 0.114 264.05); /* #00003e blue */
+  --color-secondary: oklch(0.9503 0.0275 236.17); /* #def2ff light blue */
+  --color-background: oklch(0.9842 0.0034 247.86); /* #f8fafc creamy */
+  --color-accent: oklch(0.8342 0.117 87.43); /*  #e9c46a gold */
+
+  --font-victor-mono: "Victor Mono";
+  --font-caveat: "Caveat";
+  --font-nunito: "Nunito";
+  --font-finlandica: "Finlandica";
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  min-height: 100%;
 }
+body {
+  background-color: var(--color-background);
+  color: var(--color-primary);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* font-family: var(--font-nunito-sans); */
+}
+@keyframes animatedGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.bg-animated-gradient {
+  background: linear-gradient(
+    -45deg,
+    oklch(0.2643 0.1778 264.14),
+    oklch(0.7 0.05 255),
+    oklch(0.9503 0.0275 236.17),
+    oklch(0.7 0.05 255),
+    oklch(0.2643 0.1778 264.14)
+  );
+  background-size: 400% 400%;
+  animation: animatedGradient 20s ease infinite;
+}
+
+.bg-vercel {
+  background: radial-gradient(circle at 30% 20%, #000479, #111);
 }
