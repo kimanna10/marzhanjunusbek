@@ -5,7 +5,7 @@ import Section from "@/components/layouts/Section";
 import SectionHeader from "@/components/layouts/SectionHeader";
 import LottieAnimation from "@/components/ui/LottieAnimation";
 // import dynamic from "next/dynamic";
-import { IoCalendar, IoLocationSharp, IoTimeSharp } from "react-icons/io5";
+import { IoCalendar, IoLocationSharp } from "react-icons/io5";
 
 // const LottieAnimation = dynamic(
 //   () => import("@/components/ui/LottieAnimation"),
@@ -70,12 +70,6 @@ export default function ProgramSection() {
             <IoCalendar size={26} />
             <p className="text-lg">
               Старт: <span className="font-bold">7 сентрября</span>
-            </p>
-          </div>
-          <div className="flex items-center gap-5">
-            <IoTimeSharp size={26} />
-            <p className="text-lg">
-              Время: <span className="font-bold">10:00 – 18:00</span>
             </p>
           </div>
 

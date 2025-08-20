@@ -5,7 +5,7 @@ import Section from "@/components/layouts/Section";
 import SectionHeader from "@/components/layouts/SectionHeader";
 import LottieAnimation from "@/components/ui/LottieAnimation";
 import Link from "next/link";
-import { IoCall, IoLocationSharp, IoMail } from "react-icons/io5";
+import { IoCall, IoMail } from "react-icons/io5";
 
 export default function ContactSection() {
   return (
@@ -22,10 +22,6 @@ export default function ContactSection() {
 
       {/* Контактная информация */}
       <div className="flex flex-col items-center justify-center space-y-4">
-        <div className="flex items-center gap-5">
-          <IoLocationSharp size={26} />
-          <p className="text-lg">ул. Нурлы Жол 16, Алматы</p>
-        </div>
         <div className="flex items-center gap-5">
           <IoMail size={26} />
 
