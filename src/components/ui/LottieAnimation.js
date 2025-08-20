@@ -1,13 +1,12 @@
-import animationData from "@/animations/drawkit-grape-animation-1-LOOP.json"; // путь к файлу
-import Lottie from "lottie-react";
+"use client";
+import { useLottie } from "lottie-react";
 
-export default function LottieAnimation({ loop = true, className = "" }) {
-  return (
-    <Lottie
-      animationData={animationData}
-      loop={loop}
-      autoplay={true}
-      className={className}
-    />
-  );
+export default function LottieAnimation({ item, className = "" }) {
+  const defaultOptions = {
+    animationData: item,
+    loop: true,
+  };
+  const { View } = useLottie(defaultOptions);
+
+  return <div className={className}>{View}</div>;
 }

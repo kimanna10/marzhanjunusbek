@@ -10,11 +10,11 @@ export default function Footer() {
     { label: "Контакты", href: "#contact" },
   ];
   return (
-    <footer className="py-14 bg-primary/40 text-background md:text-center">
+    <footer className="py-14 bg-light-blue/30 text-primary md:text-center">
       <Container className="space-y-4">
         {/* Логотип или название */}
         <div className="text-xl font-bold ">
-          Трансформационный курс Поток5.0 от Marzhan Junusbek
+          Терапевтический курс "Исцеление Души" Поток 5.0 от Маржан Жунусбек
         </div>
 
         {/* Навигация */}
@@ -32,9 +32,21 @@ export default function Footer() {
         </ul>
 
         {/* Права */}
-        <p className="text-sm text-background">
-          © 2025 Marzhan Junusbek. Все права защищены.
+        <p className="text-sm">
+          &copy; {new Date().getFullYear()} Marzhan Junusbek. Все права
+          защищены.
         </p>
+        <div className="flex flex-col text-xs text-gray-600">
+          <Link href="https://lordicon.com/" target="_blank" rel="noreferrer">
+            Icons by Lordicon.com
+          </Link>
+          <Link href="https://creattie.com/" target="_blank" rel="noreferrer">
+            Animated illustrations by Creattie.com
+          </Link>
+          <Link href="https://freepik.com/" target="_blank" rel="noreferrer">
+            Illustrations & video-banner by Freepik.com
+          </Link>
+        </div>
       </Container>
     </footer>
   );

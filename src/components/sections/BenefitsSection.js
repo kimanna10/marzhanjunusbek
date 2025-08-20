@@ -1,7 +1,17 @@
 import Highlight from "@/components/layouts/Highlight";
 import Section from "@/components/layouts/Section";
 import SectionHeader from "@/components/layouts/SectionHeader";
+// import LottieAnimation from "@/components/ui/LottieAnimation";
 import { FaCheckCircle } from "react-icons/fa";
+
+// import dynamic from "next/dynamic";
+
+// // const LottieAnimation = dynamic(
+// //   () => import("@/components/ui/LottieAnimation"),
+// //   {
+// //     ssr: false,
+// //   }
+// // );
 
 const benefits = [
   "Поймете, как формируются эмоциональные блоки, и как заново возродить свою энергию.",
@@ -18,35 +28,34 @@ const benefits = [
 
 export default function BenefitsSection() {
   return (
-    <Section className="bg-primary/50" id="benefits">
+    <Section className="" id="benefits">
       <SectionHeader
         title="Раскрытие через опыт"
         description={
           <>
-            На{" "}
-            <Highlight className="text-primary">
-              терапевтическом курсе
-            </Highlight>{" "}
-            курсе Вы:
+            На <Highlight>терапевтическом курсе</Highlight> курсе Вы:
           </>
         }
-        className="text-background"
       />
 
-      {/* <LottieAnimation /> */}
-      <div className="space-y-4">
-        {benefits.map((benefit, index) => (
-          <div
-            key={index}
-            className="flex flex-col gap-1 p-6 border cursor-pointer bg-primary/5 rounded-xl border-background/10 text-background backdrop-blur-sm md:flex-row"
-          >
-            <div className="text-2xl md:text-3xl">
-              <FaCheckCircle className="text-accent" />
-            </div>
+      <div className="flex flex-col justify-center">
+        {/* <LottieAnimation /> */}
+        <img className="w-auto h-48 lg:h-96" src="/img/edu-concept.svg" />
 
-            <p className="leading-relaxed">{benefit}</p>
-          </div>
-        ))}
+        <div className="md:grid md:grid-cols-2 flex flex-col gap-4">
+          {benefits.map((benefit, index) => (
+            <div
+              key={index}
+              className="flex flex-row items-center gap-4 p-3 md:p-6  bg-white/40 rounded-xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] text-primary backdrop-blur-sm "
+            >
+              <div className="text-2xl md:text-3xl">
+                <FaCheckCircle className="text-accent" />
+              </div>
+
+              <p className="leading-snug">{benefit}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </Section>
   );

@@ -18,14 +18,13 @@ export default function Button({
 
   let variantClass = "";
   if (variant === "primary")
-    variantClass = "bg-yellow text-primary  rounded-xl";
+    variantClass = "bg-primary text-background rounded-xl";
   if (variant === "secondary")
-    variantClass =
-      "bg-transparent text-background outline-2 outline-background outline-offset-[-2px] hover:text-primary hover:bg-background rounded-xl";
+    variantClass = "bg-secondary text-white rounded-xl w-full ";
 
   if (variant === "outlined")
     variantClass =
-      "bg-transparent text-primary outline-2 outline-primary outline-offset-[-2px] hover:shadow-[0_0_8px_4px_rgba(0,0,0,0.25)]";
+      "bg-transparent text-primary outline-2 outline-primary rounded-xl outline-offset-[-2px] hover:shadow-[0_0_8px_4px_rgba(0,0,0,0.25)] backdrop-blur-sm";
 
   if (variant === "icon")
     variantClass =
@@ -40,7 +39,7 @@ export default function Button({
   const iconOnlyClass = isIconOnly ? "p-2" : "";
   const gapClass = icon && children ? "gap-2" : "";
 
-  const finalClass = `inline-flex items-center justify-center  font-semibold transition-all cursor-pointer duration-200  hover:shadow-[0_0_8px_4px_rgba(0,0,0,0.2)]  ${variantClass} ${sizeClass} ${disabledClass} ${iconOnlyClass} ${gapClass} ${className}`;
+  const finalClass = `inline-flex items-center justify-center font-semibold transition-all cursor-pointer duration-200  hover:shadow-[0_0_8px_4px_rgba(0,0,0,0.2)]  ${variantClass} ${sizeClass} ${disabledClass} ${iconOnlyClass} ${gapClass} ${className}`;
 
   return (
     <Link href={href} target={target}>
@@ -55,7 +54,7 @@ export default function Button({
         ) : (
           <>
             {icon && iconPosition === "left" && <span>{icon}</span>}
-            {children && <span>{children}</span>}
+            {children && <>{children}</>}
             {icon && iconPosition === "right" && <span>{icon}</span>}
           </>
         )}

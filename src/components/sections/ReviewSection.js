@@ -1,4 +1,5 @@
 import Highlight from "@/components/layouts/Highlight";
+import ReviewSlider from "@/components/layouts/ReviewSlider";
 import Section from "@/components/layouts/Section";
 import SectionHeader from "@/components/layouts/SectionHeader";
 
@@ -14,6 +15,8 @@ export default function ReviewSection() {
           </>
         }
       />
+
+      <ReviewSlider />
     </Section>
   );
 }

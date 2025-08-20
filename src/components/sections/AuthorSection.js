@@ -1,25 +1,25 @@
 import Highlight from "@/components/layouts/Highlight";
 import Section from "@/components/layouts/Section";
 import SectionHeader from "@/components/layouts/SectionHeader";
-import { FaCheck } from "react-icons/fa";
+import { IoCheckmarkCircleOutline } from "react-icons/io5";
 
 const points = [
-  "Психолог, дипломированный мастер проработок",
-  "Автор методики Sense Out Pro (SOP)",
-  "Мастер НЛП и эмоционального интеллекта",
+  "Дипломированный Психолог",
+  "Целитель (носитель родового Дара Қасиет), Медиум",
+  "Мастер проработок и трансформации сознания",
+  "Мастер PWS, Мастер НЛП и эмоционального интеллекта",
   "Автор медитативных аудио-проработок",
-  "Мастер PWS",
-  "Наставник и автор трансформационных марафонов",
+  "Автор инновационной методики проработок Sense Out Pro (SOP)",
 ];
 
 export default function AuthorSection() {
   return (
-    <Section className="bg-white" id="author">
+    <Section className="bg-white " id="author">
       <SectionHeader
         title="Автор и ведущая курса - Маржан Жунусбек"
         description={
           <>
-            <Highlight className="text-3xl font-thin bg-transparent font-caveat">
+            <Highlight className="text-3xl font-thin bg-transparent text-primary  font-caveat">
               @marzhan_junusbek
             </Highlight>
           </>
@@ -29,8 +29,11 @@ export default function AuthorSection() {
       <div className="flex flex-col-reverse items-center gap-8 mx-auto md:flex-row md:max-w-5xl">
         <div className="w-full space-y-4 md:w-2/3">
           {points.map((point, index) => (
-            <div key={index} className="flex items-start gap-3 ">
-              <FaCheck className="mt-1 text-accent shrink-0" />
+            <div key={index} className="flex items-center gap-3 ">
+              <IoCheckmarkCircleOutline
+                className=" text-secondary shrink-0"
+                size={30}
+              />
               <p className="leading-relaxed">{point}</p>
             </div>
           ))}
