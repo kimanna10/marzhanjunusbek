@@ -68,8 +68,13 @@ export default function ProgramSection() {
         <div className="flex flex-col items-center justify-center gap-4">
           <div className="flex items-center gap-5">
             <IoCalendar size={26} />
-            <p className="text-lg">
+            {/* <p className="text-lg">
               Старт: <span className="font-bold">7 сентрября</span>
+            </p> */}
+            <p className="text-lg sm:text-xl">
+              <Highlight className=" sm:px-2 px-1.5  sm:py-2 py-1 ">
+                🚀Старт близко — присоединяйся!
+              </Highlight>
             </p>
           </div>
 

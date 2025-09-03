@@ -14,7 +14,6 @@ export default function AboutSection() {
           </>
         }
       />
-      {/* <Script src="https://www.youtube.com/iframe_api" strategy="lazyOnload" /> */}
       <div className="w-full h-0 pb-[56.25%] relative border-0">
         <iframe
           src="https://www.youtube.com/embed/1grapopgwrg?si=a-p3dfIUZ0HxTGZO&rel=0&modestbranding=1"
