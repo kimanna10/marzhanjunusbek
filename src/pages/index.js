@@ -2,12 +2,14 @@ import AboutSection from "@/components/sections/AboutSection";
 import AuthorSection from "@/components/sections/AuthorSection";
 import BenefitsSection from "@/components/sections/BenefitsSection";
 import ContactSection from "@/components/sections/ContactSection";
+import CTASection from "@/components/sections/CTASection";
 import HeroSection from "@/components/sections/HeroSection";
 import PriceSection from "@/components/sections/PriceSection";
 import ProgramSection from "@/components/sections/ProgramSection";
 import ReviewSection from "@/components/sections/ReviewSection";
 import SopSection from "@/components/sections/SopSection";
 import TargetSection from "@/components/sections/TargetSection";
+
 import Head from "next/head";
 
 export default function Home() {
@@ -51,13 +53,25 @@ export default function Home() {
       <main>
         <HeroSection />
         <AboutSection />
+        <CTASection />
         <SopSection />
         <TargetSection />
+
         <BenefitsSection />
         <ProgramSection />
+        <CTASection
+          title="Откройте путь к внутренней гармонии"
+          description="Давайте вместе проработаем блоки и страхи"
+          variant="outlined"
+        />
         <AuthorSection />
         <PriceSection />
         <ReviewSection />
+        <CTASection
+          title="Готовы открыть новые возможности для себя?"
+          description="Начните трансформацию с поддержки опытного проводника"
+          variant="outlined"
+        />
         <ContactSection />
       </main>
     </>
