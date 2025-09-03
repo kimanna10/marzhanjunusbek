@@ -18,11 +18,19 @@ export default function SopSection() {
       />
       <div className="flex gap-7 items-center lg:flex-row flex-col">
         <div className="flex-1/2">
-          <img src="/img/scientists.png" alt="" className="w-[480px]" />
+          <img
+            src="/img/scientists.png"
+            alt="Карл Юнг, Альфред Адлер, Зигмунд Фрейд"
+            className="w-[480px]"
+            loading="lazy"
+          />
         </div>
         <div className="flex-1/2 space-y-8">
           <div className="flex  gap-8 items-center">
-            <div className="w-1 h-36 rounded-full bg-secondary shrink-0"></div>
+            <div
+              className="w-1 h-36 rounded-full bg-secondary shrink-0"
+              aria-hidden="true"
+            ></div>
             <p className="py-8">
               Методика SOP позволяет высвободить блоки и трансформировать
               деструктивные программы в новое поведение и это приводит к
@@ -30,7 +38,10 @@ export default function SopSection() {
             </p>
           </div>
           <div className="flex  gap-8 items-center">
-            <div className="w-1 h-36  rounded-full bg-blue shrink-0"></div>
+            <div
+              className="w-1 h-36  rounded-full bg-blue shrink-0"
+              aria-hidden="true"
+            ></div>
             <p className="py-8">
               Методика основана на учениях{" "}
               <span className="italic font-bold">
@@ -39,7 +50,10 @@ export default function SopSection() {
             </p>
           </div>
           <div className="flex gap-8 items-center">
-            <div className="w-1 h-36  rounded-full bg-pink shrink-0"></div>
+            <div
+              className="w-1 h-36  rounded-full bg-pink shrink-0"
+              aria-hidden="true"
+            ></div>
             <p className="py-8 italic">
               Чудо не в методике, а в вас! Данный инструмент помогает раскрыть
               весь ваш скрытый потенциал

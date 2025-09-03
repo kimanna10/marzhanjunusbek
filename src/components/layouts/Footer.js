@@ -13,9 +13,9 @@ export default function Footer() {
     <footer className="py-14 bg-light-blue/30 text-primary md:text-center">
       <Container className="space-y-4">
         {/* Логотип или название */}
-        <div className="text-xl font-bold ">
+        <p className="text-xl font-bold ">
           Терапевтический курс "Исцеление Души" Поток 5.0 от Маржан Жунусбек
-        </div>
+        </p>
 
         {/* Навигация */}
         <ul className="flex flex-col justify-start gap-2 md:justify-center md:gap-6 md:flex-row">
@@ -23,7 +23,7 @@ export default function Footer() {
             <li key={item.href}>
               <Link
                 href={item.href}
-                className="block py-2 transition md:py-4 hover:text-accent"
+                className="block py-2 transition md:py-4 hover:text-accent focus-visible:outline-none"
               >
                 {item.label}
               </Link>
@@ -36,17 +36,35 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} Marzhan Junusbek. Все права
           защищены.
         </p>
-        <div className="flex flex-col text-xs text-gray-600">
-          <Link href="https://lordicon.com/" target="_blank" rel="noreferrer">
+        <nav
+          className="flex flex-col text-xs text-gray-600"
+          aria-label="Внешние ресурсы"
+        >
+          <Link
+            href="https://lordicon.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Icons by Lordicon.com, откроется в новой вкладке"
+          >
             Icons by Lordicon.com
           </Link>
-          <Link href="https://creattie.com/" target="_blank" rel="noreferrer">
+          <Link
+            href="https://creattie.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Animated illustrations by Creattie.com, откроется в новой вкладке"
+          >
             Animated illustrations by Creattie.com
           </Link>
-          <Link href="https://freepik.com/" target="_blank" rel="noreferrer">
+          <Link
+            href="https://freepik.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Illustrations & video-banner by Freepik.com, откроется в новой вкладке"
+          >
             Illustrations & video-banner by Freepik.com
           </Link>
-        </div>
+        </nav>
       </Container>
     </footer>
   );

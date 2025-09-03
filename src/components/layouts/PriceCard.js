@@ -25,11 +25,15 @@ export default function PriceCard({
   const finalClass = `lg:px-5 sm:px-10 px-5 py-12 rounded-2xl shadow-[5px_10px_20px_0_rgba(0,0,0,0.25)] flex flex-col justify-between gap-20 ${typeClass}`;
   const finalDots = `w-2.5 h-2.5 rounded-full shrink-0 ${typeDots}`;
   return (
-    <div className={finalClass}>
+    <article className={finalClass}>
       <div className="flex flex-col justify-between gap-20 ">
         <div className="flex flex-col items-center justify-between gap-2 text-center min-h-80">
           <h3 className="text-2xl font-bold">«{title}»</h3>
-          <img src={img} alt="" className="w-52 h-auto" />
+          <img
+            src={img}
+            alt={`Изображение тарифа ${title}`}
+            className="w-52 h-auto"
+          />
           <div className="bg-secondary rounded-xl text-white py-1.5 px-10 text-sm font-bold">
             Длительность - {period}
           </div>
@@ -38,9 +42,7 @@ export default function PriceCard({
           {items.map((item, index) => (
             <li className="flex items-center gap-2.5" key={index}>
               <div className={finalDots}></div>
-              <p key={index} className="leading-snug">
-                {item}
-              </p>
+              <p className="leading-snug">{item}</p>
             </li>
           ))}
         </ul>
@@ -62,10 +64,12 @@ export default function PriceCard({
           size="lg"
           href="https://api.whatsapp.com/message/OPQULHZBEUNYG1"
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Купить тариф ${title} через WhatsApp`}
         >
           Купить
         </Button>
       </div>
-    </div>
+    </article>
   );
 }

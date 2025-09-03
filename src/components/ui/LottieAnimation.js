@@ -8,5 +8,9 @@ export default function LottieAnimation({ item, className = "" }) {
   };
   const { View } = useLottie(defaultOptions);
 
-  return <div className={className}>{View}</div>;
+  return (
+    <div className={className} aria-hidden="true">
+      {View}
+    </div>
+  );
 }

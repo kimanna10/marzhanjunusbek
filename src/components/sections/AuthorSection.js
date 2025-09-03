@@ -33,6 +33,7 @@ export default function AuthorSection() {
               <IoCheckmarkCircleOutline
                 className=" text-secondary shrink-0"
                 size={30}
+                aria-hidden="true"
               />
               <p className="leading-relaxed">{point}</p>
             </div>
@@ -42,8 +43,9 @@ export default function AuthorSection() {
         <div className="flex-shrink-0 w-full overflow-hidden shadow-lg rounded-xl md:w-1/3">
           <img
             src="/author.jpg"
-            alt="Автор курса"
+            alt="Маржан Жунусбек — автор и ведущая курса 'Исцеление Души'"
             className="object-cover w-full h-full"
+            loading="lazy"
           />
         </div>
       </div>

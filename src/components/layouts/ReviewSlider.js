@@ -14,7 +14,7 @@ const reviews = Array.from({ length: 18 }, (_, i) => `review${i + 1}.png`);
 
 export default function ReviewSlider() {
   return (
-    <div>
+    <div role="region" aria-label="Отзывы участников курса">
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -40,7 +40,7 @@ export default function ReviewSlider() {
             <SwiperSlide key={index} className="md:px-0 px-12">
               <img
                 src={`/img/reviews/${src}`}
-                alt={`Review ${index + 1}`}
+                alt={`Отзыв участника курса №${index + 1}`}
                 className="rounded-2xl w-full"
               />
             </SwiperSlide>

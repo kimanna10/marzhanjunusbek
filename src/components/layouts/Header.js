@@ -25,9 +25,6 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md">
       <nav className="container flex items-center justify-end px-4 py-4 mx-auto md:justify-center md:py-2">
-        {/* Лого */}
-        {/* <div className="text-xl font-bold text-primary">SOP</div> */}
-
         {/* Десктоп навигация */}
         <ul className="hidden gap-8 text-lg font-medium md:flex">
           {navItems.map((item) => (
@@ -78,7 +75,10 @@ export default function Header() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="fixed inset-0 z-40 flex flex-col items-center justify-center h-screen space-y-6 text-xl font-medium md:hidden bg-background"
+            role="menu"
+            aria-modal="true"
+            id="mobileMenu"
+            className="fixed inset-0 z-40 flex flex-col items-center justify-center h-screen space-y-6 text-xl font-medium md:hidden bg-background focus-visible:text-accent"
           >
             {navItems.map((item) => (
               <Link

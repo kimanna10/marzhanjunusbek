@@ -11,6 +11,7 @@ export default function Layout({ children, className = "" }) {
           autoPlay
           loop
           muted
+          aria-hidden="true"
           playsInline
         />
       </div>

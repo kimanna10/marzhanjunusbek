@@ -51,19 +51,23 @@ const benefits = [
 
 export default function BenefitsSection() {
   return (
-    <Section className="" id="benefits">
+    <Section className="">
       <SectionHeader
         title="Раскрытие через опыт"
         description={
           <>
-            На <Highlight>терапевтическом курсе</Highlight> курсе Вы:
+            На <Highlight>терапевтическом курсе</Highlight> Вы:
           </>
         }
       />
 
       <div className="flex flex-col justify-center">
-        {/* <LottieAnimation /> */}
-        <img className="w-auto h-48 lg:h-96" src="/img/edu-concept.svg" />
+        <img
+          className="w-auto h-48 lg:h-96"
+          src="/img/edu-concept.svg"
+          alt="Концепция обучения"
+          aria-hidden="true"
+        />
 
         <div className="md:grid md:grid-cols-2 flex flex-col gap-4">
           {benefits.map((benefit, index) => (

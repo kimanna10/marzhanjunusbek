@@ -23,7 +23,7 @@ export default function ContactSection() {
       {/* Контактная информация */}
       <div className="flex flex-col items-center justify-center space-y-4">
         <div className="flex items-center gap-5">
-          <IoMail size={26} />
+          <IoMail size={26} aria-hidden="true" />
 
           <Link
             href="mailto:marzhan.junusbek@gmail.com"
@@ -34,7 +34,7 @@ export default function ContactSection() {
         </div>
 
         <div className="flex items-center gap-5">
-          <IoCall size={26} />
+          <IoCall size={26} aria-hidden="true" />
           <Link href="tel:+77475565681" className="text-lg">
             +7 747 556 56 81
           </Link>
@@ -44,12 +44,14 @@ export default function ContactSection() {
           <Link
             href="https://www.instagram.com/marzhan_junusbek/"
             target="_blank"
+            aria-label="Instagram Маржан Жунусбек"
           >
             <LottieAnimation item={instagram} className="w-18" />
           </Link>
           <Link
             href="https://api.whatsapp.com/message/OPQULHZBEUNYG1"
             target="_blank"
+            aria-label="WhatsApp Маржан Жунусбек"
           >
             <LottieAnimation item={whatsapp} className="w-18" />
           </Link>

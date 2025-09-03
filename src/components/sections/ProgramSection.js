@@ -16,7 +16,7 @@ import { IoCalendar, IoLocationSharp } from "react-icons/io5";
 
 export default function ProgramSection() {
   return (
-    <Section className="bg-primary text-background" id="program">
+    <Section className="bg-primary text-background">
       <SectionHeader
         title="Как проходит обучение"
         description={
@@ -51,7 +51,7 @@ export default function ProgramSection() {
         <div className="text-primary max-w-4xl mx-auto space-y-10">
           <div className="bg-background py-5 md:px-20 px-6 rounded-xl ">
             <p className="font-bold sm:text-lg text-center ">
-              🔥 В течении терапевтической курса вы получаете x3 СРАЗУ:
+              🔥 В течение терапевтического курса вы получаете x3 СРАЗУ:
               авторскую методику проработок SOP + практику + решение своих
               запросов.
             </p>
@@ -67,9 +67,9 @@ export default function ProgramSection() {
 
         <div className="flex flex-col items-center justify-center gap-4">
           <div className="flex items-center gap-5">
-            <IoCalendar size={26} />
+            <IoCalendar size={26} aria-hidden="true" />
             {/* <p className="text-lg">
-              Старт: <span className="font-bold">7 сентрября</span>
+              Старт: <span className="font-bold">7 сентября</span>
             </p> */}
             <p className="text-lg sm:text-xl">
               <Highlight className=" sm:px-2 px-1.5  sm:py-2 py-1 ">
@@ -79,14 +79,19 @@ export default function ProgramSection() {
           </div>
 
           <div className="flex items-center gap-5">
-            <IoLocationSharp size={26} />
+            <IoLocationSharp size={26} aria-hidden="true" />
             <p className="text-lg">
               Формат: <span className="font-bold">онлайн</span>
             </p>
           </div>
         </div>
         <div className="flex sm:gap-5 gap-1.5 items-center justify-center">
-          <img src="/img/kaspired.png" alt="" className="sm:w-28 w-20" />
+          <img
+            src="/img/kaspired.png"
+            alt=""
+            className="sm:w-28 w-20"
+            aria-hidden="true"
+          />
           <p className="sm:text-lg font-bold">
             Есть возможность оплаты в рассрочку через Kaspi Red
           </p>
