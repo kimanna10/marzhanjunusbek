@@ -1,31 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  /* --color-primary: oklch(0.2643 0.1778 264.14); #000479 blue */
-  /* --color-primary: oklch(0.1645 0.114 264.05); /* #00003e blue */
-  /*--color-secondary: oklch(0.9503 0.0275 236.17); /* #def2ff light blue */
-  /*--color-background: oklch(0.9842 0.0034 247.86); /* #f8fafc creamy */
-  /* --color-accent: oklch(0.8342 0.117 87.43); /*  #e9c46a gold */
-
   --color-secondary: oklch(0.6305 0.134 250.79); /* #438DD7 blue */
-  /* --color-secondary: oklch(0.8251 0.0853 188.12); /* #81D8D0 tiffany */
   --color-primary: oklch(0.1908 0.0135 187.55); /* ##0d1615  */
   --color-background: oklch(0.9811 0.0096 189.07); /* #F2FBFA white */
   --color-light-blue: oklch(0.9329 0.0364 194.42); /* #CEF1F0 light blue */
   --color-blue: oklch(0.7948 0.0862 212.84); /* #76CBDD  blue */
   --color-pink: oklch(0.8622 0.0827 314.36); /* #E6C2F8  pink */
-
   --color-red: oklch(0.5992 0.2385 27.84); /* #ED131A  red */
-
-  /* --color-accent: oklch(0.698 0.1077 14.31); /* #D88189 pink */
   --color-accent: oklch(0.5316 0.1797 142.69); /* #008404 green */
-  /* --color-yellow: oklch(0.93 0.2 101.99); */
-
-  --font-victor-mono: "Victor Mono";
   --font-caveat: "Caveat";
-  --font-nunito: "Nunito";
-  --font-finlandica: "Finlandica";
-
   --font-roboto: "Roboto Flex";
 }
 
@@ -37,6 +21,4 @@ html {
 body {
   background-color: var(--color-background);
   color: var(--color-primary);
-
-  /* font-family: var(--font-nunito-sans); */
 }

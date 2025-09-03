@@ -6,6 +6,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import PriceSection from "@/components/sections/PriceSection";
 import ProgramSection from "@/components/sections/ProgramSection";
 import ReviewSection from "@/components/sections/ReviewSection";
+import SopSection from "@/components/sections/SopSection";
 import TargetSection from "@/components/sections/TargetSection";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
     <main>
       <HeroSection />
       <AboutSection />
+      <SopSection />
       <TargetSection />
       <BenefitsSection />
       <ProgramSection />

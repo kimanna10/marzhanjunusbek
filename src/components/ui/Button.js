@@ -62,21 +62,3 @@ export default function Button({
     </Link>
   );
 }
-
-//   <Button variant="icon" icon={<IoMdSettings size={18} />} />
-
-/* <Button
-variant="secondary"
-icon={<IoMdSettings size={18} />}
-iconPosition="left"
->
-Настройки
-</Button> */
-
-//   <Button variant="primary" loading>
-//         Загрузка...
-//       </Button>
-
-//       <Button variant="primary" disabled>
-//         Недоступно
-//       </Button>

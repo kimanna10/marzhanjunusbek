@@ -47,7 +47,7 @@ const features = [
 
 export default function TargetSection() {
   return (
-    <Section className="bg-white" id="for-whom">
+    <Section className="bg-white">
       <SectionHeader
         title="Для кого"
         description={
