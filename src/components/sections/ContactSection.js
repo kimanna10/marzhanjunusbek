@@ -36,7 +36,7 @@ export default function ContactSection() {
         <div className="flex items-center gap-5">
           <IoCall size={26} aria-hidden="true" />
           <Link href="tel:+77750581415" className="text-lg">
-            +7 747 556 56 81
+            +7 775 058 14 15
           </Link>
         </div>
 
