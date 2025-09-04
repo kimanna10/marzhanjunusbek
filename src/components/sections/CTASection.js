@@ -24,7 +24,7 @@ export default function CTASection({
           />
           <div className="mx-auto">
             <Button
-              href="https://wa.me/77750581415?text=Хочу%20записаться%20на%20курс"
+              href="https://wa.me/77760581415?text=Хочу%20записаться%20на%20курс"
               target="_blank"
               variant={variant}
               size="lg"

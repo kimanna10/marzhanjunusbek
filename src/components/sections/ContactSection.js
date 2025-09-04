@@ -35,8 +35,8 @@ export default function ContactSection() {
 
         <div className="flex items-center gap-5">
           <IoCall size={26} aria-hidden="true" />
-          <Link href="tel:+77750581415" className="text-lg">
-            +7 775 058 14 15
+          <Link href="tel:+77760581415" className="text-lg">
+            +7 776 058 14 15
           </Link>
         </div>
 
@@ -49,7 +49,7 @@ export default function ContactSection() {
             <LottieAnimation item={instagram} className="w-18" />
           </Link>
           <Link
-            href="https://wa.me/77750581415?text=Здравствуйте%20пишу%20с%20сайта"
+            href="https://wa.me/77760581415?text=Здравствуйте%20пишу%20с%20сайта"
             target="_blank"
             aria-label="Написать на WhatsApp"
           >
