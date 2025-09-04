@@ -5,14 +5,13 @@ import SectionHeader from "@/components/layouts/SectionHeader";
 import Button from "@/components/ui/Button";
 
 export default function CTASection({
-  className,
   title = "Готовы сделать первый шаг к гармонии?",
   description = "Присоединяйтесь к курсу сейчас",
   buttonText = "Зарегистрироваться",
   variant = "primary",
 }) {
   return (
-    <section className={`py-15  ${className}`}>
+    <section className={`py-15`}>
       <Container>
         <div className="flex flex-col gap-5">
           <SectionHeader
@@ -24,7 +23,12 @@ export default function CTASection({
             }
           />
           <div className="mx-auto">
-            <Button href="#" target="_blank" variant={variant} size="lg">
+            <Button
+              href="https://wa.me/77750581415?text=Хочу%20записаться%20на%20курс"
+              target="_blank"
+              variant={variant}
+              size="lg"
+            >
               {buttonText}
             </Button>
           </div>

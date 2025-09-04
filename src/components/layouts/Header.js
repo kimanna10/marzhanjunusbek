@@ -23,7 +23,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md" id="top">
       <nav className="container flex items-center justify-end px-4 py-4 mx-auto md:justify-center md:py-2">
         {/* Десктоп навигация */}
         <ul className="hidden gap-8 text-lg font-medium md:flex">

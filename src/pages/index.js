@@ -53,7 +53,6 @@ export default function Home() {
       <main>
         <HeroSection />
         <AboutSection />
-        <CTASection />
         <SopSection />
         <TargetSection />
 

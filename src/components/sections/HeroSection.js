@@ -24,10 +24,15 @@ export default function HeroSection() {
             раскрытия потенциала и активации энергии
           </p>
           <div className="flex flex-col items-start gap-5 sm:flex-row">
-            <Button variant="primary" size="lg" href="#pricing">
+            <Button
+              variant="primary"
+              size="lg"
+              href="https://wa.me/77750581415?text=Хочу%20записаться%20на%20курс
+"
+            >
               Зарегистироваться
             </Button>
-            <Button variant="outlined" size="lg" href="#for-whom">
+            <Button variant="outlined" size="lg" href="#pricing">
               Подробнее
             </Button>
           </div>

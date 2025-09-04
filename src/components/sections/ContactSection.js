@@ -26,16 +26,16 @@ export default function ContactSection() {
           <IoMail size={26} aria-hidden="true" />
 
           <Link
-            href="mailto:marzhan.junusbek@gmail.com"
+            href="mailto:umaradilet552@gmail.com"
             className="underline underline-offset-2 text-lg"
           >
-            marzhan.junusbek@gmail.com
+            umaradilet552@gmail.com
           </Link>
         </div>
 
         <div className="flex items-center gap-5">
           <IoCall size={26} aria-hidden="true" />
-          <Link href="tel:+77475565681" className="text-lg">
+          <Link href="tel:+77750581415" className="text-lg">
             +7 747 556 56 81
           </Link>
         </div>
@@ -49,9 +49,9 @@ export default function ContactSection() {
             <LottieAnimation item={instagram} className="w-18" />
           </Link>
           <Link
-            href="https://api.whatsapp.com/message/OPQULHZBEUNYG1"
+            href="https://wa.me/77750581415?text=Здравствуйте%20пишу%20с%20сайта"
             target="_blank"
-            aria-label="WhatsApp Маржан Жунусбек"
+            aria-label="Написать на WhatsApp"
           >
             <LottieAnimation item={whatsapp} className="w-18" />
           </Link>

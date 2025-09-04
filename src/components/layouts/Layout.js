@@ -1,3 +1,4 @@
+import ScrollToTopButton from "@/components/ui/ScrollToTopButton";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -19,6 +20,7 @@ export default function Layout({ children, className = "" }) {
       <Header />
       {children}
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }

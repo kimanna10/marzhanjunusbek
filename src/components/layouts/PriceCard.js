@@ -62,7 +62,7 @@ export default function PriceCard({
         <Button
           variant="secondary"
           size="lg"
-          href="https://api.whatsapp.com/message/OPQULHZBEUNYG1"
+          href={`https://wa.me/77750581415?text=Хочу%20записаться%20на%20курс%20по%20тарифу: ${title}`}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Купить тариф ${title} через WhatsApp`}
