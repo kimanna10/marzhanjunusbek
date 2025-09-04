@@ -27,7 +27,7 @@ export default function HeroSection() {
             <Button
               variant="primary"
               size="lg"
-              href="https://wa.me/77750581415?text=Хочу%20записаться%20на%20курс
+              href="https://wa.me/77760581415?text=Хочу%20записаться%20на%20курс
 "
             >
               Зарегистироваться
